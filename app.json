@@ -5,6 +5,9 @@
   "repository": "https://github.com/wadewegner/salesforce-dx-pipeline-sample",
   "author": "",
   "license": "ALv2",
+  "scripts": {
+      "postdeploy": "sfdx force:data:tree:import --plan ./data/*plan.json"
+    },
   "bugs": {
     "url": "https://github.com/wadewegner/salesforce-dx-pipeline-sample/issues"
   },
