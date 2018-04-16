@@ -1,0 +1,4 @@
+{"scripts": {
+    "postdeploy": "echo sfdx force:data:tree:import --plan data/sfdx-demo-data-Product2-plan.json --targetusername `sfdx force:org:display --json | jq -r .result.alias`"
+  }
+}
